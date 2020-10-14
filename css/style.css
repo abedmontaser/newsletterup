@@ -916,10 +916,12 @@ ul.footer_social li a i:hover {
 
 #award-wining-form {
     max-width: 100%;
+    display: flex;
 }
 
 #newsletter-form #email_newsletter,
-#award-wining-form #email_award-wining {
+#award-wining-form #email_award-wining,
+#award-wining-form #field_1 {
     background: url(../images/input-envelope.png) no-repeat 15px 20px;
     width: 100%;
     max-width: 335px;
