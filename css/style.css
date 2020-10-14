@@ -898,6 +898,11 @@ ul.footer_social li a i:hover {
     margin-bottom: 30px;
 }
 
+.emailoctopus-form-default .emailoctopus-form-row {
+    margin-bottom: 0;
+    flex: 2;
+}
+
 .newsletter_form_box {
     margin: 0 auto;
     max-width: 730px;
@@ -912,11 +917,11 @@ ul.footer_social li a i:hover {
     border-radius: 5px 5px;
     -webkit-box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.1);
     box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
 }
 
 #award-wining-form {
-    max-width: 100%;
-    display: flex;
+    margin: auto;
 }
 
 #newsletter-form #email_newsletter,

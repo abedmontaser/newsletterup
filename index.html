@@ -9,8 +9,7 @@
     <title>Genius - Creative Landing Page Template</title>
     <!-- Loading Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Loading Template CSS -->
-    <link href="css/style.css" rel="stylesheet">
+
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
     <link href="css/style-magnific-popup.css" rel="stylesheet">
@@ -24,6 +23,8 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Octopus Style -->
     <link rel="stylesheet" href="https://emailoctopus.com/bundles/emailoctopuslist/css/1.6/form.css">
+    <!-- Loading Template CSS -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -90,20 +91,14 @@
                 <h1>Discover The Wold's Most Advanced Online Tool</h1>
 
                 <p class="hero-text">Track and analyze all your data in one central location.</p>
-
-                <!--begin newsletter_form_box -->
-                <div class="newsletter_form_box">
-
-                    <!--begin success_box -->
-                    <p class="newsletter_success_box" style="display:none;">We received your message and you'll hear
-                        from us soon. Thank You!</p>
-                    <!--end success_box -->
-
-                    <!--begin newsletter-form -->
-                    <form id="newsletter-form"
-                          class="newsletter-form"
-                          action="https://emailoctopus.com/lists/6339dcc1-0e01-11eb-a3d0-06b4694bee2a/members/embedded/1.3s/add"
+                <div class="emailoctopus-form-wrapper emailoctopus-form-default null">
+                    <p class="emailoctopus-success-message">
+                    </p>
+                    <p class="emailoctopus-error-message">
+                    </p>
+                    <form action="https://emailoctopus.com/lists/6339dcc1-0e01-11eb-a3d0-06b4694bee2a/members/embedded/1.3s/add"
                           method="post"
+                          id="newsletter-form"
                           data-message-success="Thanks for subscribing!"
                           data-message-missing-email-address="Your email address is required."
                           data-message-invalid-email-address="Your email address looks incorrect, please try again."
@@ -111,27 +106,34 @@
                           data-message-consent-required="Please check the checkbox to indicate your consent."
                           data-message-invalid-parameters-error="This form has missing or invalid fields."
                           data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later."
-                          data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6">
-
-                        <input id="email_newsletter" type="email" name="field_0"
-                               placeholder="Enter Your Email Address"/>
-                        <div aria-hidden="true" class="emailoctopus-form-row-hp">
-                            <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1"
-                                   autocomplete="nope"/>
+                          class="emailoctopus-form"
+                          data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
+                    >
+                        <div class="emailoctopus-form-row">
+                            <input id="email_newsletter"
+                                   name="field_0"
+                                   type="email"
+                                   placeholder="Enter Your Email Address"
+                                   required="required"
+                            >
                         </div>
-                        <input type="hidden" name="successRedirectUrl">
-                        <button type="submit" id="submit-button-newsletter">Submit</button>
-
+                        <div aria-hidden="true"
+                             class="emailoctopus-form-row-hp"
+                        >
+                            <input type="text"
+                                   name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a"
+                                   tabindex="-1"
+                                   autocomplete="nope"
+                            >
+                        </div>
+                        <div class="emailoctopus-form-row-subscribe">
+                            <input type="hidden"
+                                   name="successRedirectUrl"
+                            >
+                            <button type="submit" id="submit-button-newsletter">Subscribe</button>
+                        </div>
                     </form>
-                    <!--end newsletter-form -->
-
-                    <p class="newsletter-form-terms">
-                        <span>We respect your privacy. You can always unsubscribe with one click.</span>
-                    </p>
-
                 </div>
-                <!--end newsletter_form_box -->
-
             </div>
             <!--end col-md-6-->
 
@@ -283,7 +285,7 @@
 
                 <p class="white-text">Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets
                     lobotis nisle consequat nihis etim aspernatur netsum.</p>
-                <!--begin newsletter-form -->
+                <!--begin Award-Winning-form -->
                 <div class="emailoctopus-form-wrapper emailoctopus-form-default null">
                     <p class="emailoctopus-success-message">
                     </p>
@@ -327,7 +329,7 @@
                         </div>
                     </form>
                 </div>
-                <!--end newsletter-form -->
+                <!--end Award-Winning-form -->
                 <!--                    <a href="#" class="btn-white small scrool">Discover More</a>-->
 
                 <!--                    <a href="#" class="btn-white-border small scrool">Get In Touch</a>-->
